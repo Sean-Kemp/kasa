@@ -1,0 +1,19 @@
+.header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px;
+}
+
+.header__link {
+      width: 20%;
+      text-decoration: none;
+      color: #ff6060;
+      text-align: right;
+      font-size: 24px;
+}
+
+.header__link--accueil {
+      padding-right: 50px;
+}

@@ -1,11 +1,9 @@
-function App() {
+function Home() {
       return (
-            <div className="App">
-                  <header className="App-header">
-                        <p>Bonjour</p>
-                  </header>
+            <div>
+                  <h1>HOME</h1>
             </div>
       );
 }
 
-export default App;
+export default Home;
