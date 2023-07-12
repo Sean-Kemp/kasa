@@ -1,3 +1,4 @@
+import React from 'react';
 import logoFooter from '../../assets/logos/logo-footer.svg';
 import '../../styles/footer.css';
 

@@ -1,0 +1,12 @@
+.card {
+      background-color: aqua;
+      height: 400px;
+      width: 400px;
+      margin: 10px;
+}
+
+.card__img {
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: contain;
+}
