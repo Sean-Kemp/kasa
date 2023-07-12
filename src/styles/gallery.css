@@ -1,4 +1,21 @@
 .gallery {
-      display: flex;
-      flex-wrap: wrap;
+      background-color: #f6f6f6;
+      width: 100%;
+      border-radius: 15px;
+      box-sizing: border-box;
+      margin: 50px;
+      padding: 50px;
+      display: grid;
+      gap: 3em;
+      grid-template-columns: repeat(3, 1fr);
+}
+
+@media all and (max-width: 768px) {
+      .gallery {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 1em;
+            padding: 0px;
+            margin: 20px 20px 20px 20px;
+            background-color: #ffffff;
+      }
 }

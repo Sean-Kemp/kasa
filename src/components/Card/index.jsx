@@ -1,13 +1,12 @@
 import React from 'react';
 import '../../styles/card.css';
 
-function Card(props) {
-      const { cover, title } = props;
+function Card({ cover, title }) {
       return (
             <div className="card">
                   <img src={cover} alt={title} className="card__img" />
-                  <div>
-                        <p>{title}</p>
+                  <div className="card__overlay">
+                        <p className="card__title">{title}</p>
                   </div>
             </div>
       );

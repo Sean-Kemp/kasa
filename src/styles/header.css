@@ -1,12 +1,12 @@
 .header {
-      width: 100%;
+      width: auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      margin: 50px 50px 0px 50px;
 }
 
 .header__link {
-      width: 20%;
       text-decoration: none;
       color: #ff6060;
       text-align: right;
@@ -14,5 +14,26 @@
 }
 
 .header__link--accueil {
-      padding-right: 50px;
+      margin-right: 50px;
+}
+
+.header__logo {
+      width: 210px;
+}
+
+@media all and (max-width: 768px) {
+      .header {
+            margin: 20px 20px 0px 20px;
+      }
+      .header__logo {
+            width: 150px;
+      }
+
+      .header__link {
+            font-size: 16px;
+      }
+
+      .header__link--accueil {
+            margin-right: 15px;
+      }
 }
