@@ -30,7 +30,7 @@
       .header__link {
             font-size: 12px;
             text-transform: uppercase;
-            margin-left: 10px;
+            margin: 0px 0px 5px 10px;
       }
 
       .header__nav {
@@ -41,6 +41,6 @@
       }
 
       .header__logo {
-            max-width: 35%;
+            width: 145px;
       }
 }
