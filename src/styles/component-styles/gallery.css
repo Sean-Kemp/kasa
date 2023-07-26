@@ -6,8 +6,14 @@
       margin: 50px;
       padding: 50px;
       display: grid;
-      gap: 3em;
+      gap: 50px;
       grid-template-columns: repeat(3, 1fr);
+}
+
+@media all and (max-width: 1050px) {
+      .gallery {
+            grid-template-columns: repeat(2, 1fr);
+      }
 }
 
 @media all and (max-width: 768px) {

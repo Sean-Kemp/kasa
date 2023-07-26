@@ -1,0 +1,128 @@
+.logement__page {
+      width: 100%;
+}
+
+.logement__titlesection {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 20px 0px 20px 0px;
+}
+
+.logement__title {
+      color: #ff6060;
+      font-weight: 500;
+      font-size: 36px;
+      margin: 10px 10px 10px 0px;
+}
+
+.logement__location {
+      color: #ff6060;
+      font-weight: 500;
+      font-size: 18px;
+      margin: 0px 10px 20px 0px;
+}
+
+.logement__tags {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+}
+
+.logement__titleleft {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+}
+
+.logement__titleright {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: space-between;
+      width: 190px;
+}
+
+.host__container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: auto;
+}
+
+.host__name {
+      flex-wrap: wrap;
+      width: 100px;
+      text-align: right;
+      color: #ff6060;
+      font-size: 18px;
+      font-weight: 400;
+}
+
+.host__img {
+      border-radius: 80px;
+      width: 64px;
+      margin-left: 10px;
+}
+
+.logement__infosection {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+}
+
+.equipments__list {
+      list-style-type: none;
+      padding-inline-start: 0px;
+      margin-block-start: 0px;
+      margin-block-end: 0px;
+}
+
+.equipments__item {
+      list-style-type: none;
+}
+
+@media all and (max-width: 768px) {
+      .logement__titlesection {
+            flex-direction: column;
+            margin-top: 10px;
+      }
+
+      .logement__title {
+            font-size: 18px;
+      }
+
+      .logement__location {
+            font-size: 14px;
+      }
+
+      .logement__titleleft {
+            width: 100%;
+      }
+
+      .logement__titleright {
+            width: 100%;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+      }
+
+      .logement__infosection {
+            flex-direction: column;
+      }
+
+      .infobox--logement {
+            width: 100%;
+            margin-bottom: 20px;
+      }
+
+      .host__img {
+            width: 32px;
+      }
+
+      .host__name {
+            font-size: 12px;
+            width: 50px;
+      }
+}

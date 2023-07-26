@@ -1,12 +1,13 @@
 import Infobox from '../../components/Infobox';
 import Banner from '../../components/Banner';
 import apropos from '../../data/apropos.json';
-import '../../styles/apropos.css';
+import '../../styles/page-styles/apropos.css';
 import bannerAbout from '../../assets/banner/banner-about.png';
+import '../../styles/general-styles/page-layout.css';
 
 function APropos() {
       return (
-            <div className="apropos">
+            <main className="main">
                   <Banner image={bannerAbout} />
                   <div className="apropos__list">
                         {apropos.map((apropos) => {
@@ -19,7 +20,7 @@ function APropos() {
                               );
                         })}
                   </div>
-            </div>
+            </main>
       );
 }
 

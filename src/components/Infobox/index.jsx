@@ -1,36 +1,69 @@
 import React from 'react';
 import { useState } from 'react';
-import '../../styles/infobox.css';
+import { useLocation } from 'react-router-dom';
+import '../../styles/component-styles/infobox.css';
 
 function Infobox({ title, text }) {
       const [isOpen, setIsOpen] = useState(false);
-
+      const location = useLocation();
       return isOpen ? (
-            <div className="infobox">
+            <div
+                  className={
+                        location.pathname === '/a_propos'
+                              ? 'infobox'
+                              : 'infobox--logement'
+                  }
+            >
                   <div className="infobox__head">
-                        <h2 className="infobox__title">{title}</h2>
-                        <button
-                              className="infobox__button"
-                              onClick={() => setIsOpen(false)}
+                        <h2
+                              className={
+                                    location.pathname === '/a_propos'
+                                          ? 'infobox__title'
+                                          : 'infobox__title infobox__title--logement'
+                              }
                         >
-                              Fermer
-                        </button>
+                              {title}
+                        </h2>
+                        <i
+                              className="infobox__button fa-solid fa-chevron-up"
+                              onClick={() => setIsOpen(false)}
+                        ></i>
                   </div>
 
                   <div className="infobox__textbox">
-                        <span className="infobox__text">{text}</span>
+                        <span
+                              className={
+                                    location.pathname === '/a_propos'
+                                          ? 'infobox__text'
+                                          : 'infobox__text infobox__text--logement'
+                              }
+                        >
+                              {text}
+                        </span>
                   </div>
             </div>
       ) : (
-            <div className="infobox">
+            <div
+                  className={
+                        location.pathname === '/a_propos'
+                              ? 'infobox'
+                              : 'infobox infobox--logement'
+                  }
+            >
                   <div className="infobox__head">
-                        <h2 className="infobox__title">{title}</h2>
-                        <button
-                              className="infobox__button"
-                              onClick={() => setIsOpen(true)}
+                        <h2
+                              className={
+                                    location.pathname === '/a_propos'
+                                          ? 'infobox__title'
+                                          : 'infobox__title infobox__title--logement'
+                              }
                         >
-                              Ouvrir
-                        </button>
+                              {title}
+                        </h2>
+                        <i
+                              className="infobox__button fa-solid fa-chevron-down"
+                              onClick={() => setIsOpen(true)}
+                        ></i>
                   </div>
             </div>
       );

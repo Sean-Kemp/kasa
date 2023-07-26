@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import '../../styles/component-styles/carrousel.css';
 
 function Carrousel({ slides }) {
       const [current, setCurrent] = useState(0);
@@ -15,25 +16,33 @@ function Carrousel({ slides }) {
             return null;
       }
       return (
-            <div>
-                  {length > 1 && (
-                        <span className="left-Arrow" onClick={previous}>
-                              <button>PREVIOUS</button>
-                        </span>
-                  )}
-                  {length > 1 && (
-                        <span className="right-Arrow" onClick={next}>
-                              <button>NEXT</button>
-                        </span>
-                  )}
+            <div className="carrousel">
+                  <div className="carrousel__overlay">
+                        {length > 1 && (
+                              <i
+                                    className="left-arrow fa-solid fa-chevron-left"
+                                    onClick={previous}
+                              ></i>
+                        )}
+                        {length > 1 && (
+                              <i
+                                    className="right-arrow fa-solid fa-chevron-right"
+                                    onClick={next}
+                              ></i>
+                        )}
+                  </div>
                   {slides.map((image, i) => {
                         return (
-                              <div key={i}>
+                              <div key={i} className="carrousel__container">
                                     {i === current && (
-                                          <img src={image} alt=" " />
+                                          <img
+                                                src={image}
+                                                alt=" "
+                                                className="carrousel__img"
+                                          />
                                     )}
                                     {i === current && length > 1 && (
-                                          <span>
+                                          <span className="carrousel__counter">
                                                 {current + 1}/{length}
                                           </span>
                                     )}

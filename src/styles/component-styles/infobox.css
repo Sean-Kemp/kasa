@@ -1,0 +1,65 @@
+.infobox {
+      margin-bottom: 20px;
+      width: 100%;
+}
+
+.infobox--logement {
+      width: 49%;
+}
+
+.infobox__head {
+      display: flex;
+      justify-content: space-between;
+      background-color: #ff6060;
+      color: #ffffff;
+      border-radius: 10px;
+      padding: 0px 30px 0px 30px;
+      align-items: center;
+}
+
+.infobox__title {
+      font-size: 24px;
+      font-weight: 500;
+}
+
+.infobox__title--logement {
+      font-size: 18px;
+}
+
+.infobox__button {
+      font-size: 24px;
+}
+
+.infobox__textbox {
+      background-color: #f6f6f6;
+      padding: 30px;
+      border-radius: 10px;
+}
+
+.infobox__text {
+      color: #ff6060;
+      font-size: 24px;
+      font-weight: 400;
+}
+
+.infobox__text--logement {
+      font-size: 18px;
+}
+
+@media all and (max-width: 768px) {
+      .infobox__head {
+            padding: 0px 15px 0px 15px;
+      }
+      .infobox__button {
+            font-size: 18px;
+      }
+      .infobox__title {
+            font-size: 13px;
+      }
+      .infobox__textbox {
+            padding: 10px 10px 10px 15px;
+      }
+      .infobox__text {
+            font-size: 12px;
+      }
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import './styles/index.css';
+import './styles/general-styles/index.css';
 import Home from './pages/Home';
 import FicheLogement from './pages/FicheLogement';
 import APropos from './pages/APropos';

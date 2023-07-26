@@ -27,11 +27,20 @@
 .banner__heading {
       color: #ffffff;
       font-size: 48px;
+      padding: 48px;
 }
 
 @media all and (max-width: 768px) {
+      .banner {
+            height: 120px;
+            align-items: center;
+            border-radius: 10px;
+      }
       .banner__heading {
-            font-size: 30px;
-            margin: 20px 30px 20px 30px;
+            font-size: 24px;
+            padding: 18px;
+      }
+      .banner__overlay {
+            height: 120px;
       }
 }

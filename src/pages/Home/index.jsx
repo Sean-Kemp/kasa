@@ -1,18 +1,19 @@
 import React from 'react';
 import Gallery from '../../components/Gallery';
 import Banner from '../../components/Banner';
-import '../../styles/home.css';
+import '../../styles/page-styles/home.css';
+import '../../styles/general-styles/page-layout.css';
 import bannerHome from '../../assets/banner/banner-home.png';
 
 function Home() {
       return (
-            <div className="home__container">
+            <main className="main">
                   <Banner
                         image={bannerHome}
                         text="Chez vous, partout et ailleurs"
                   />
                   <Gallery />
-            </div>
+            </main>
       );
 }
 
