@@ -4,9 +4,9 @@ import { useLocation } from 'react-router-dom';
 import '../../styles/component-styles/infobox.css';
 
 function Infobox({ title, text }) {
-      const [isOpen, setIsOpen] = useState(false);
+      const [isOpen, setIsOpen] = useState(false); //Infobox fermé par défaut
       const location = useLocation();
-      return isOpen ? (
+      return isOpen ? ( // si infobox ouvert :
             <div
                   className={
                         location.pathname === '/a_propos'
@@ -17,7 +17,7 @@ function Infobox({ title, text }) {
                   <div className="infobox__head">
                         <h2
                               className={
-                                    location.pathname === '/a_propos'
+                                    location.pathname === '/a_propos' //Déterminer la page sur laquelle il est utilisé pour donner class name
                                           ? 'infobox__title'
                                           : 'infobox__title infobox__title--logement'
                               }
@@ -43,6 +43,7 @@ function Infobox({ title, text }) {
                   </div>
             </div>
       ) : (
+            // si infobox fermé :
             <div
                   className={
                         location.pathname === '/a_propos'

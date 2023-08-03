@@ -8,6 +8,7 @@ function Gallery() {
       return (
             <div className="gallery">
                   {logements.map((logement) => {
+                        //créer un card pour chaque logement dans la base de données
                         return (
                               <article key={logement.id}>
                                     <Link to={`/logement/${logement.id}`}>

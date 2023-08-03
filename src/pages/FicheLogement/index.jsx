@@ -12,12 +12,14 @@ function FicheLogement() {
       const { id } = useParams();
       const logement = logements.find((logement) => logement.id === id);
       if (!logement) {
-            return <NoPage />;
+            return <NoPage />; // En cas de défaut de l'ID, renvoyer vers error page
       }
       const tags = logement.tags.map((tags, i) => {
+            //Générer tags
             return <Tag key={i} tag={tags} />;
       });
       const equipments = logement.equipments.map((equipment, i) => {
+            //Générer liste d'équipements
             return (
                   <li key={i} className="equipments__item">
                         {equipment}
